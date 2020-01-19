@@ -13,7 +13,8 @@ namespace Heapify
 
         public static void Heapify(int[] arr)
         {
-            for (int i = 0; i < arr.Length; i++)
+            var lastParentIndex = arr.Length / 2 - 1;
+            for (int i = lastParentIndex; i >= 0 ; i++)
             {
                 Heapify(arr, i);
             }
